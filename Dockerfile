@@ -1,4 +1,4 @@
-FROM plexinc/pms-docker:plexpass
+FROM plexinc/pms-docker:public
 MAINTAINER bulzipke <bulzipke@naver.com>
 
 RUN apt-get update
