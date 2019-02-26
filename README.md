@@ -19,3 +19,10 @@ $ docker run \
 ```
 
 Then, you can find your smb folder in /mnt
+
+
+# Running with these plug-ins
+```
+https://github.com/axfree/DaumMovie.bundle
+https://github.com/SOULITY/NaverMusic.bundle
+```
