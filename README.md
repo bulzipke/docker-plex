@@ -25,4 +25,5 @@ Then, you can find your smb folder in /mnt
 * https://github.com/axfree/DaumMovie.bundle
 * https://github.com/SOULITY/NaverMusic.bundle
 * https://github.com/taligentx/LiveTVH.bundle
+* https://github.com/soju6jan/AlsongLyricFind.bundle
 
