@@ -8,8 +8,8 @@ ENV ConfigDir="/rclone" \
 RUN apt-get update
 RUN apt-get install -y fuse unzip rename
 
-RUN sed -i "2i/mount.sh &" /etc/services.d/plex/run
-RUN sed -i "3ibash /setup.sh" /etc/services.d/plex/run
+RUN sed -i "2i/mount.sh &" /plex-common.sh
+RUN sed -i "3ibash /setup.sh" /plex-common.sh
 RUN sed -i 's/#user_allow_other/user_allow_other/g' /etc/fuse.conf
 
 WORKDIR /root
