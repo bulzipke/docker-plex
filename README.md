@@ -23,7 +23,6 @@ Then, you can find your rclone folder in /media
 
 
 # Running with these plug-ins
-* https://github.com/axfree/DaumMovie.bundle
 * https://github.com/SOULITY/NaverMusic.bundle
 * https://github.com/soju6jan/AlsongLyricFind.bundle
-
+* https://github.com/soju6jan/SJ_Daum.bundle
