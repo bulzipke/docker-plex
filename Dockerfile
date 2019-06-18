@@ -11,9 +11,7 @@ RUN apt-get install -y fuse unzip rename sqlite
 RUN sed -i "2i/mount.sh &" /plex-common.sh
 RUN sed -i "3ibash /setup.sh" /plex-common.sh
 RUN sed -i 's/#user_allow_other/user_allow_other/g' /etc/fuse.conf
-RUN sed -i "3isqlite3 -header -line \"/config/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.plugins.library.db\" \"PRAGMA page_count\"" /etc/cont-init.d/40-plex-first-run
-RUN sed -i "3isqlite3 -header -line \"/config/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.plugins.library.db\" \"PRAGMA default_cache_size = 1000000\"" /etc/cont-init.d/40-plex-first-run
-RUN sed -i "3isqlite3 -header -line \"/config/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.plugins.library.db\" \"PRAGMA page_count\"" /etc/cont-init.d/40-plex-first-run
+RUN sed -i "3isqlite3 -header -line \"/config/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.plugins.library.db\" \"PRAGMA default_cache_size = 1000000\"" /etc/services.d/plex/run
 
 WORKDIR /root
 RUN curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip
