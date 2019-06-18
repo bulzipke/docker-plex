@@ -6,5 +6,6 @@ curl -L -o AlsongLyricFind.bundle.zip https://github.com/soju6jan/AlsongLyricFin
 
 ls *.zip | xargs -n1 unzip -q -o 
 rename "s/\-master//" *
+rm -rf *.zip
 cp -Rf * /config/Library/Application\ Support/Plex\ Media\ Server/Plug-ins/
 rm -rf *
