@@ -6,7 +6,7 @@ ENV ConfigDir="/rclone" \
     UnmountCommands="-u -z"
 
 RUN apt-get update
-RUN apt-get install -y fuse unzip rename
+RUN apt-get install -y fuse unzip rename sqlite
 
 RUN sed -i "2i/mount.sh &" /plex-common.sh
 RUN sed -i "3ibash /setup.sh" /plex-common.sh
