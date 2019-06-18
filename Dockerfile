@@ -5,7 +5,7 @@ ENV ConfigDir="/rclone" \
     ConfigName=".rclone.conf" \
     UnmountCommands="-u -z"
 
-RUN apt-get update
+RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y fuse unzip rename
 
 RUN sed -i "2i/mount.sh &" /plex-common.sh
